@@ -34,8 +34,8 @@ sequelize.sync({force: true}).success(function() {
     Task.create({title: 'Mobile', details: 'new version'}).success(function(task) {
       console.log('INFO: new task ', task.title)
 
-      Person.setTasks([task]).success(function() {
-        console.log('INFO: ', person.name, ' has new task ', task.name)
+      person.setTasks([task]).success(function() {
+        console.log('INFO: ', person.name, ' has new task ', task.title)
       })
     })
   })
