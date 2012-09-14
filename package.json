@@ -1,0 +1,17 @@
+{
+  "author": "Martin Bormeister",
+  "name": "test-associations",
+  "version": "1.0.0",
+  "repository": {
+    "url": ""
+  },
+  "main": "app.js",
+  "engines": {
+    "node": "~0.8.9"
+  },
+  "dependencies": {
+    "sequelize": "1.4.1",
+    "sqlite3": "2.1.5"
+  },
+  "devDependencies": {}
+}
