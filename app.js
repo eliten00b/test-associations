@@ -8,8 +8,6 @@ const config  = JSON.parse(fs.readFileSync("./config/config.json"))
 
 // init sequelize
 var sequelize = new Sequelize(config.dbName, config.dbUser, config.dbPassword, {
-  dialect: 'sqlite',
-  storage: 'database.sqlite'
 })
 
 // init db models
